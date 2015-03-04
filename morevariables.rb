@@ -1,17 +1,31 @@
-my_name = gets.chomp
-my_age = 25 #this is true in 2015!
-my_height = 62 #inches
-my_weight = 54 #kilograms
-my_eyes = 'Blue'
-my_teeth = 'White'
-my_hair = 'Blonde'
+puts "What is your name?"
+name = gets.chomp
 
-puts "Let's talk about #{my_name}."
-puts "She's #{my_height} inches small."
-puts "She's #{my_weight} kilograms heavy."
+puts "How old are you?"
+age = gets.to_i #this is true in 2015!
+
+puts "What is your height in inches?"
+height = gets.to_i
+
+inches = height
+centimeters = (inches * 2.54)
+
+height_centimeters = (height * centimeters)
+weight = 54 #kilograms
+eyes = 'Blue'
+teeth = 'White'
+hair = 'Blonde'
+
+puts "#{inches} inches is the equivalent of #{centimeters} centimeters."
+
+puts "Let's talk about #{name}."
+puts "She is #{age} years old."
+puts "She's #{height} inches small."
+puts "That's the equivalent of #{centimeters} centimeters."
+puts "She's #{weight} kilograms heavy."
 puts "Actually, that is pretty light!"
-puts "She's got #{my_eyes} eyes and #{my_hair} hair."
-puts "Her teeth are usually #{my_teeth} as long as she hasn't gulped down too much tea."
+puts "She's got #{eyes} eyes and #{hair} hair."
+puts "Her teeth are usually #{teeth} as long as she hasn't gulped down too much tea."
 
-puts "If I add #{my_age}, #{my_height}, and #{my_weight} I get #{my_age + my_height + my_weight}."
+puts "If I add #{age}, #{height}, and #{weight} I get #{age + height + weight}."
 
