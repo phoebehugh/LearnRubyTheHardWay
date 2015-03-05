@@ -7,15 +7,15 @@ puts "If you do want that, hit RETURN."
 $stdin.gets
 
 puts "Opening the file..."
-target = open(filename, 'w')
+target = open(filename, 'w') # the 'w' opens the file in write mode. The others could be 'r' for read or 'a' for append.
 
 puts "Truncating the file. Goodbye!"
-target = truncate(0)
+target.truncate(0)
 
 puts "Now I'm going to ask you for three lines."
 
 print "line 1: "
-line1 = $stdn.gets.chomp
+line1 = $stdin.gets.chomp
 print "line 2: "
 line2 = $stdin.gets.chomp
 print "line 3: "
